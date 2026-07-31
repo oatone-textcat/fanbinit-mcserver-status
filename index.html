@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>마인크래프트 서버 상태</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <section class="status-card" aria-labelledby="page-title">
+      <div class="eyebrow">MINECRAFT SERVER</div>
+      <h1 id="page-title">서버 상태</h1>
+
+      <div class="status-row">
+        <span id="status-dot" class="status-dot loading" aria-hidden="true"></span>
+        <span id="status-text" role="status" aria-live="polite">확인 중…</span>
+      </div>
+
+      <div class="player-panel">
+        <span class="player-label">현재 접속자</span>
+        <strong id="player-count" class="player-count">—</strong>
+      </div>
+
+      <p id="message" class="message">서버 정보를 불러오고 있습니다.</p>
+
+      <div class="footer-row">
+        <span id="updated-at">마지막 확인: —</span>
+        <button id="refresh-button" type="button">새로고침</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
